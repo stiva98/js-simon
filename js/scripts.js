@@ -6,6 +6,10 @@ const myContainer = document.querySelector('.container');
 const buttonStart = document.getElementById('start');
 const reset = document.getElementById('reset');
 
+setTimeout(
+    myTimer, 
+    30000);
+
 buttonStart.addEventListener('click', function(){
     while (arrCasualNumber.length < casualNumber){
         const newNumberCasual = randomNumber(1, maxNumberInArr);
@@ -43,17 +47,12 @@ reset.addEventListener('click', function (){
 
 
 
-
-
-
-
-
-
-
-
 /*
 FUNCTIONS
 */
 function randomNumber(min,max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
+}
+function myTimer() {
+    alert('Tempo finito')
 }
