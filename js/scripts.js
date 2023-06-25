@@ -8,7 +8,7 @@ const reset = document.getElementById('reset');
 
 setTimeout(
     myTimer, 
-    30000);
+    5000);
 
 buttonStart.addEventListener('click', function(){
     while (arrCasualNumber.length < casualNumber){
@@ -54,5 +54,8 @@ function randomNumber(min,max) {
     return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 function myTimer() {
-    alert('Tempo finito')
+    const newBoxNone = document.querySelectorAll('.cell');
+    for(let i = 0; i < newBoxNone.length; i++){
+        newBoxNone[i].classList.add('cell-2');
+    }
 }

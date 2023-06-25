@@ -25,3 +25,6 @@ RESET
     font-size: x-large;
     margin: .625rem;
 }
+.cell-2 {
+    display: none;
+}
