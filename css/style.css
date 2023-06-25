@@ -7,3 +7,21 @@ RESET
     padding: 0;
     box-sizing: border-box;
 }
+.container {
+    max-width: 73.125rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.cell {
+    width: 6.25rem;
+    height: 6.25rem;
+    border: .125rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    margin: .625rem;
+}
